@@ -6,7 +6,7 @@ const handleSelectedItem = (item: string) => {
   console.log(item);
 };
 
-function Question2() {
+function Question3() {
   let items = ["Invisibility", "Super Stength"];
   return (
     <div>
@@ -15,12 +15,12 @@ function Question2() {
         heading="Would you rather have invisibility or super strength?"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question1">
+      <Link to="/Question2">
         <Button color="primary" onClick={() => console.log()}>
           Back
         </Button>
       </Link>
-      <Link to="/Question3">
+      <Link to="/Question4">
         <Button color="primary" onClick={() => console.log()}>
           Next
         </Button>
@@ -29,4 +29,4 @@ function Question2() {
   );
 }
 
-export default Question2;
+export default Question3;
