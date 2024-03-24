@@ -1,10 +1,8 @@
 import { useState } from "react";
-import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
-  const [alertVisible, setAlertVisibility] = useState(false);
   let items = [
     "Aries",
     "Taurus",
@@ -30,7 +28,8 @@ function App() {
         FIRE ALARM
       </Button> */}
       <ListGroup items={items} heading="What star sign are you?" onSelectItem={handleSelectedItem}/>
-    </div>
+      <Button color="primary" onClick={() => handleSelectedItem}>Next</Button>
+    </div> 
   );
 }
 
