@@ -9,7 +9,7 @@ const handleSelectedItem = (item: string) => {
 function Question7() {
   let items = ["Praise from others", "Your own ambition", "A reward/prize", "A consequence", "The deadline"];
   return (
-    <div style={{ background: "purple", textAlign: "center", paddingTop: "50px"  }}>
+    <div style={{ minHeight: "100vh", background: "#200657", textAlign: "center", paddingTop: "50px"  }}>
       <ListGroup
         items={items}
         heading="What motivates you to reach for the stars?"

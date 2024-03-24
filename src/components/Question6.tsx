@@ -9,7 +9,7 @@ const handleSelectedItem = (item: string) => {
 function Question6() {
   let items = ["Review the slides", "Do practice problems", "Let someone teach you", "Teach someone else", "Cram the night before", "Pray to the stars"];
   return (
-    <div style={{ background: "purple", textAlign: "center", paddingTop: "50px"  }}>
+    <div style={{ minHeight: "100vh", background: "#200657", textAlign: "center", paddingTop: "50px"  }}>
       <ListGroup
         items={items}
         heading="How do you prepare for upcoming tests?"

@@ -19,8 +19,15 @@ function Login() {
   };
 
   return (
-    <div style={{ textAlign: "center", paddingTop: "50px" }}>
-      <h1>Study Stars</h1>
+    <div
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "#200657",
+        textAlign: "center",
+        paddingTop: "50px",
+      }}
+    >
+      <h1 style={{color: "white"}}>Study Stars</h1>
       <div>
         <input
           type="text"
@@ -36,10 +43,10 @@ function Login() {
           placeholder="Password"
           value={password}
           onChange={handlePasswordChange}
-          style={{ marginRight: "10px", marginTop: "20px"  }}
+          style={{ marginRight: "10px", marginTop: "20px" }}
         />
       </div>
-      <div style={{marginTop: "20px"}}>
+      <div style={{ marginTop: "20px" }}>
         <Link to="/Question1">
           <Button color="primary" onClick={() => console.log()}>
             Login

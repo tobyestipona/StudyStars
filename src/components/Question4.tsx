@@ -9,7 +9,7 @@ const handleSelectedItem = (item: string) => {
 function Question4() {
   let items = ["Bear", "Giant Crab"];
   return (
-    <div style={{ background: "purple", textAlign: "center", paddingTop: "50px"  }}>
+    <div style={{ minHeight: "100vh", background: "#200657", textAlign: "center", paddingTop: "50px"  }}>
       <ListGroup
         items={items}
         heading="Would you rather fight a bear or a giant crab?"

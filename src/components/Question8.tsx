@@ -9,10 +9,10 @@ const handleSelectedItem = (item: string) => {
 function Question8() {
   let items = ["Telescope", "Food", "Chairs/Blanket", "Insect repellant", "Winging it"];
   return (
-    <div style={{ background: "purple", textAlign: "center", paddingTop: "50px"  }}>
+    <div style={{ minHeight: "100vh", background: "#200657", textAlign: "center", paddingTop: "50px"  }}>
       <ListGroup
         items={items}
-        heading="You and your partner are going stargazing. What are you priotizing?"
+        heading="You and your partner are going stargazing. What are you prioritizing?"
         onSelectItem={handleSelectedItem}
       />
       <div style={{ display: "flex", justifyContent: "space-between" }}>
