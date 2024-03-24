@@ -20,6 +20,11 @@ function Question10() {
           Back
         </Button>
       </Link>
+      <Link to="/SelfProfile">
+        <Button color="primary" onClick={() => console.log()}>
+          Submit
+        </Button>
+      </Link>
     </div>
   );
 }

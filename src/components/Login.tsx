@@ -1,14 +1,51 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
-
+import { SetStateAction, useState } from "react";
 
 function Login() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleUsernameChange = (event: {
+    target: { value: SetStateAction<string> };
+  }) => {
+    setUsername(event.target.value);
+  };
+
+  const handlePasswordChange = (event: {
+    target: { value: SetStateAction<string> };
+  }) => {
+    setPassword(event.target.value);
+  };
+
   return (
-    <div>
-      <h1>Login</h1>
-      <Link to="/Question1">
-        <Button color="primary" onClick={() => console.log()}>Start</Button>
-      </Link>
+    <div style={{ textAlign: "center", paddingTop: "50px" }}>
+      <h1>Study Stars</h1>
+      <div>
+        <input
+          type="text"
+          placeholder="NetID"
+          value={username}
+          onChange={handleUsernameChange}
+          style={{ marginRight: "10px", marginTop: "20px" }}
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={handlePasswordChange}
+          style={{ marginRight: "10px", marginTop: "20px"  }}
+        />
+      </div>
+      <div style={{marginTop: "20px"}}>
+        <Link to="/Question1">
+          <Button color="primary" onClick={() => console.log()}>
+            Login
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }
