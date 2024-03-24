@@ -8,8 +8,8 @@ const handleSelectedItem = (item: string) => {
 
 function Question5() {
   let items = ["Lyre", "Pan Flute"];
-  return (
-    <div>
+   return (
+    <div style={{ background: "purple" }}>
       <ListGroup
         items={items}
         heading="Would you rather play the lyre or pan flute?"

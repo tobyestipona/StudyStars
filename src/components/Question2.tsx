@@ -9,7 +9,7 @@ const handleSelectedItem = (item: string) => {
 function Question2() {
   let items = ["Invisibility", "Super Stength"];
   return (
-    <div>
+    <div style={{ background: "purple" }}>
       <ListGroup
         items={items}
         heading="Would you rather have invisibility or super strength?"
@@ -26,6 +26,7 @@ function Question2() {
         </Button>
       </Link>
     </div>
+    
   );
 }
 

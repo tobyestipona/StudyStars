@@ -9,7 +9,7 @@ const handleSelectedItem = (item: string) => {
 function Question3() {
   let items = ["Blub blub", "Let's go fishing!"];
   return (
-    <div>
+    <div style={{ background: "purple" }}>
       <ListGroup
         items={items}
         heading="It's a lake day! Would you rather go fishing or turn into a fish?"

@@ -9,7 +9,7 @@ const handleSelectedItem = (item: string) => {
 function Question9() {
   let items = ["Their intelligence", "Keeping you on task", "Chill and patient", "Life of the party", "Has good study music"];
   return (
-    <div>
+    <div style={{ background: "purple" }}>
       <ListGroup
         items={items}
         heading="What do you value most in a study partner?"

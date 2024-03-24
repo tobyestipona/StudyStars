@@ -9,10 +9,10 @@ const handleSelectedItem = (item: string) => {
 function Question10() {
   let items = ["Noisy", "Too busy", "Unproductive", "Different interests", "Disorganized"];
   return (
-    <div>
+    <div style={{ background: "purple" }}>
       <ListGroup
         items={items}
-        heading="What do you NOT want in a study partnet"
+        heading="What do you NOT want in a study partner"
         onSelectItem={handleSelectedItem}
       />
       <Link to="/Question9">
