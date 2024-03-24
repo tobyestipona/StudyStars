@@ -7,12 +7,12 @@ const handleSelectedItem = (item: string) => {
 };
 
 function Question3() {
-  let items = ["Invisibility", "Super Stength"];
+  let items = ["Blub blub", "Let's go fishing!"];
   return (
     <div>
       <ListGroup
         items={items}
-        heading="Would you rather have invisibility or super strength?"
+        heading="It's a lake day! Would you rather go fishing or turn into a fish?"
         onSelectItem={handleSelectedItem}
       />
       <Link to="/Question2">
