@@ -15,16 +15,18 @@ function Question3() {
         heading="It's a lake day! Would you rather go fishing or turn into a fish?"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question2">
-        <Button color="primary" onClick={() => console.log()}>
-          Back
-        </Button>
-      </Link>
-      <Link to="/Question4">
-        <Button color="primary" onClick={() => console.log()}>
-          Next
-        </Button>
-      </Link>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/Question2">
+          <Button color="primary" onClick={() => console.log()}>
+            &lt;&lt; Back
+          </Button>
+        </Link>
+        <Link to="/Question4">
+          <Button color="primary" onClick={() => console.log()}>
+            Next &gt;&gt;
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

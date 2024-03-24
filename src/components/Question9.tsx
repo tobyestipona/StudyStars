@@ -15,16 +15,18 @@ function Question9() {
         heading="What do you value most in a study partner?"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question8">
-        <Button color="primary" onClick={() => console.log()}>
-          Back
-        </Button>
-      </Link>
-      <Link to="/Question10">
-        <Button color="primary" onClick={() => console.log()}>
-          Next
-        </Button>
-      </Link>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/Question8">
+          <Button color="primary" onClick={() => console.log()}>
+            &lt;&lt; Back
+          </Button>
+        </Link>
+        <Link to="/Question10">
+          <Button color="primary" onClick={() => console.log()}>
+            Next &gt;&gt;
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

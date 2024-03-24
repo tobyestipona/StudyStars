@@ -15,16 +15,18 @@ function Question10() {
         heading="What do you NOT want in a study partner"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question9">
-        <Button color="primary" onClick={() => console.log()}>
-          Back
-        </Button>
-      </Link>
-      <Link to="/SelfProfile">
-        <Button color="primary" onClick={() => console.log()}>
-          Submit
-        </Button>
-      </Link>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/Question9">
+          <Button color="primary" onClick={() => console.log()}>
+            &lt;&lt; Back
+          </Button>
+        </Link>
+        <Link to="/SelfProfile">
+          <Button color="primary" onClick={() => console.log()}>
+            Submit
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -15,16 +15,18 @@ function Question4() {
         heading="Would you rather fight a bear or a giant crab?"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question3">
-        <Button color="primary" onClick={() => console.log()}>
-          Back
-        </Button>
-      </Link>
-      <Link to="/Question5">
-        <Button color="primary" onClick={() => console.log()}>
-          Next
-        </Button>
-      </Link>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/Question3">
+          <Button color="primary" onClick={() => console.log()}>
+            &lt;&lt; Back
+          </Button>
+        </Link>
+        <Link to="/Question5">
+          <Button color="primary" onClick={() => console.log()}>
+            Next &gt;&gt;
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

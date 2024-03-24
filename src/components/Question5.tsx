@@ -15,16 +15,18 @@ function Question5() {
         heading="Would you rather play the lyre or pan flute?"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question4">
-        <Button color="primary" onClick={() => console.log()}>
-          Back
-        </Button>
-      </Link>
-      <Link to="/Question6">
-        <Button color="primary" onClick={() => console.log()}>
-          Next
-        </Button>
-      </Link>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/Question4">
+          <Button color="primary" onClick={() => console.log()}>
+            &lt;&lt; Back
+          </Button>
+        </Link>
+        <Link to="/Question6">
+          <Button color="primary" onClick={() => console.log()}>
+            Next &gt;&gt;
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

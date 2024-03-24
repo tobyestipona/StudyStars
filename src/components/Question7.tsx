@@ -15,16 +15,18 @@ function Question7() {
         heading="What motivates you to reach for the stars?"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question6">
-        <Button color="primary" onClick={() => console.log()}>
-          Back
-        </Button>
-      </Link>
-      <Link to="/Question8">
-        <Button color="primary" onClick={() => console.log()}>
-          Next
-        </Button>
-      </Link>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link to="/Question6">
+          <Button color="primary" onClick={() => console.log()}>
+            &lt;&lt; Back
+          </Button>
+        </Link>
+        <Link to="/Question8">
+          <Button color="primary" onClick={() => console.log()}>
+            Next &gt;&gt;
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

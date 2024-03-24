@@ -28,11 +28,13 @@ function Question1() {
         heading="What star sign are you?"
         onSelectItem={handleSelectedItem}
       />
-      <Link to="/Question2">
-        <Button color="primary" onClick={() => console.log()}>
-          Next
-        </Button>
-      </Link>
+      <div style={{ textAlign: "right"}}>
+        <Link to="/Question2">
+          <Button color="primary" onClick={() => console.log()}>
+            Next &gt;&gt;
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }
