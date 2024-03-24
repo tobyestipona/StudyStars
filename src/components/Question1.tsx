@@ -22,16 +22,18 @@ function Question1() {
     "Pisces",
   ];
   return (
-  <div>
-    <ListGroup
-      items={items}
-      heading="What star sign are you?"
-      onSelectItem={handleSelectedItem}
-    />
-    <Link to="/Question2">
-        <Button color="primary" onClick={() => console.log()}>Next</Button>
-    </Link>
-  </div>
+    <div style={{ background: "purple", textAlign: "center", paddingTop: "50px" }}>
+      <ListGroup
+        items={items}
+        heading="What star sign are you?"
+        onSelectItem={handleSelectedItem}
+      />
+      <Link to="/Question2">
+        <Button color="primary" onClick={() => console.log()}>
+          Next
+        </Button>
+      </Link>
+    </div>
   );
 }
 

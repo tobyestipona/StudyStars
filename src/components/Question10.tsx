@@ -9,7 +9,7 @@ const handleSelectedItem = (item: string) => {
 function Question10() {
   let items = ["Noisy", "Too busy", "Unproductive", "Different interests", "Disorganized"];
   return (
-    <div style={{ background: "purple" }}>
+    <div style={{ background: "purple", textAlign: "center", paddingTop: "50px"  }}>
       <ListGroup
         items={items}
         heading="What do you NOT want in a study partner"
