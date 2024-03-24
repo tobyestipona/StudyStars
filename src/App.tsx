@@ -10,6 +10,8 @@ import Question7 from "./components/Question7";
 import Question8 from "./components/Question8";
 import Question9 from "./components/Question9";
 import Question10 from "./components/Question10";
+import SelfProfile from "./components/SelfProfile";
+import PartnerProfile from "./components/PartnerProfile";
 
 //REFERENCE
 //   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/Question8" element={<Question8 />}/>
         <Route path="/Question9" element={<Question9 />}/>
         <Route path="/Question10" element={<Question10 />}/>
+        <Route path="/SelfProfile" element={<SelfProfile />}/>
+        <Route path="/PartnerProfile" element={<PartnerProfile />}/>
       </Routes>
     </Router>
   );
